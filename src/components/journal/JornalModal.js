@@ -1,9 +1,7 @@
 
 import Modal from 'react-modal';
 
-import moment from 'moment';
-import Swal from 'sweetalert2';
-import { useEffect, useState } from 'react';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { endModal } from '../../actions/modal';
 
@@ -26,144 +24,32 @@ Modal.setAppElement('#root');
 
 
 
-// const startDate = moment().minute(0).second(0).add(1,'hours')
-// const endDate = startDate.clone().add(1,'hours')
 
-
-// const initEvent= {
-    
-//     title:'',
-//     start: startDate.toDate(),
-//     end:endDate.toDate(),
-//     notes:''
-   
 
 
 
 export const JornalModal = () => {
 
     const dispatch = useDispatch()
-    // const {modalOpen} = useSelector((state) =>state.ui)
+    
      const {active} = useSelector((state) =>state.modal)
 
-    // const [endState, setEndState] = useState(endDate.toDate())
-
-    // const [formValues, setFormValues] = useState(initEvent)
-
-    // const [titleValid, setTitleValid] = useState(true)
-    // const [clockValid, setClockValid] = useState(true)
-
-    // const {title, notes, start, end} = formValues;
+   
 
    
     
 
-    // const handledInputChange = ({target}) => {
-    //     setFormValues({
-    //         ...formValues,
-    //         [target.name] : target.value
-    //     })        
-
-    // }
-    // const heandledStartChange = (e) => {
-    //     setStartState(e)
-    //     setFormValues({
-    //         ...formValues,
-    //         start: e
-    //     })
-
-    // }
-    // const heandledEndChange = (e) => {
-    //     setEndState(e)
-    //     setFormValues({
-    //         ...formValues,
-    //         end : e
-    //     })
-    // }
+    
 
     const closeModal = () => {
         dispatch(endModal())
-        // setFormValues(initEvent)
-        // dispatch(eventClearActive())
-
-       
         
-        // setTimeout(() => {
-        //     setStartState(startDate.toDate())
-        //     setEndState(endDate.toDate())
-            
-        // }, 200);
-
-        
-        
-        
-       
 
     }
-    // const handlendSubmitForm = (e) => {
-    //     e.preventDefault();
-    //     // if(momentStart.isSameOrAfter(momentEnd)){
-    //     //     return Swal.fire('Alert', 'La Fecha de inicio tiene que ser diferete a la de finalizacion','warning')
-    //     // }
-    //     if(title.trim().length <= 2){
-    //         return setTitleValid(false)
-    //     }else {
-    //        setTitleValid(true)}
-
-    //     if (clockValid===false){
-    //         setClockValid(false)
-    //         return Swal.fire('Error', ' Fecha y hora invalida','error')}
-        
-        
-    //     closeModal()
-
-
-    //     if (activeEvent){
-    //             dispatch(eventUpdate(formValues))
-    //         }else{
+    
                 
-    //             dispatch(eventAddNew({
-                 
-    //                 id: new Date().getTime(),
-    //                 ...formValues,
-    //                 user:{
-    //                     _id: new Date().getTime(),
-    //                     name:'Nahusel'
-    //                 }
-    //             }))
-    //         }
-
-       
-        
-        
-        
-
-    // }
-    // useEffect(() => {
-    //     const momentStart = moment(start)
-    //     const momentEnd= moment(end)
-    //     if(momentStart.isSameOrAfter(momentEnd)){
-    //         setClockValid(false)
-
-    //         return Swal.fire('Alerta!!', ' Tiempo Lineal Compadre','question')
-
-    //     }
-    //     setClockValid(true)
-        
-      
-    // }, [start,end])
-
-    // useEffect(() => {
-
-    //     if (activeEvent){
-    //         setFormValues(activeEvent)
-    //     }else{
-    //         setFormValues(initEvent)
-            
-    //     }
-       
-       
-    // }, [activeEvent,setFormValues])
+    
+    
 
 
 
@@ -178,7 +64,7 @@ export const JornalModal = () => {
         className = 'modal'
         overlayClassName = 'modal-fondo'
         >
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 1024 1024">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="33vw" height="33vh" viewBox="0 0 1024 1024">
         <title></title>
         <g id="icomoon-ignore">
         </g>

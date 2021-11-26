@@ -8,6 +8,7 @@ import './modal.css'
 
 
 
+
 ReactDOM.render(
   <React.StrictMode>
     <JournalApp />

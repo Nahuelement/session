@@ -2,9 +2,9 @@ import React, { useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { NotesAppBar } from './NotesAppBar'
 
-import {useForm} from '../../hooks/useForm'
+ import {useForm} from '../../hooks/useForm'
 import { useEffect } from 'react'
-import { activeNote, startDeleting } from '../../actions/notes'
+import { activeNote } from '../../actions/notes'
 
 
 
@@ -13,8 +13,8 @@ export const NoteScreen = () => {
     const dispatch = useDispatch();
 
     const { active:note } = useSelector( state => state.notes );
-    const [ formValues, handleInputChange, reset ] = useForm( note );
-    const { body, title, id } = formValues;
+     const [ formValues, handleInputChange, reset ] = useForm( note );
+    //  const { body, title, id } = formValues;
 
     const activeN = useRef( note );
 
@@ -37,35 +37,17 @@ export const NoteScreen = () => {
     }, [formValues, dispatch])
 
 
-    const handleDelete = () => {
-        dispatch( startDeleting( id ) );
-    }
+    // const handleDelete = () => {
+    //     dispatch( startDeleting( id ) );
+    // }
     return (
         <div className="notes__main-content    ">
             
-            <NotesAppBar  />
+            <NotesAppBar />
 
             <div className='notes__content   '>
             
-                {/* <input 
                 
-                type="text"
-                placeholder="Agrega un buen titulo"
-                className ='notes__title-input animate__animated animate__fadeIn '
-                onChange={handleInputChange}
-                name = 'title'
-                value = {title}
-                
-                />
-
-                <textarea
-                placeholder="¿Que a pasado hoy?"
-                className='notes__textarea animate__animated animate__fadeIn '
-                value = {body}
-                name = 'body'
-                onChange={handleInputChange} >
-
-                </textarea> */}
 
                 { note.url  && (<div className = 'notes__image animate__animated animate__fadeIn'>
                     <img 
@@ -76,14 +58,7 @@ export const NoteScreen = () => {
 
                 </div>)}
             </div>
-            {/* <button
-
-            className = 'btn btn-danger animate__animated animate__fadeIn animate__fast	800ms'
-            onClick={handleDelete}
-            >
-                Eliminar
-            </button> */}
-            
+          
         </div>
 
 

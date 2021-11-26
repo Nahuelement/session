@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+
 import {  starGoogleLogin, startLogin } from '../../actions/auth'
 import { useForm } from '../../hooks/useForm'
 
@@ -19,22 +19,18 @@ export const LoginScreen = () => {
     const {email , password} = formValues;
 
     const handleLogin = () => {
-        // console.log('click')
+        
         
         dispatch(startLogin(email,password))
       
 
     }
     const handleLoginGoogle = (e) => {
-        // console.log('click')
+        
         dispatch(starGoogleLogin())
 
     }
-    // const handleLoginFacebook = (e) => {
-        
-    //     dispatch(starFacebookLogin())
-
-    // }
+    
 
 
 

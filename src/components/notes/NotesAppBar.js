@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { startSaveNote, startUpLoading } from '../../actions/notes'
+import {  startUpLoading } from '../../actions/notes'
 
 
 
@@ -15,14 +15,14 @@ export const NotesAppBar = () => {
     const dispatch = useDispatch()
 
 
-    const handledSave = () => {
-        console.log('Archivo activo guardado:',active)
-        dispatch(startSaveNote(active))
-    }
+    // const handledSave = () => {
+    //     console.log('Archivo activo guardado:',active)
+    //     dispatch(startSaveNote(active))
+    // }
 
     const handleFileChange = (e) => {
         const file = e.target.files[0]
-        console.log(file)
+       
         if (file){
 
             dispatch(startUpLoading(file))
@@ -53,12 +53,7 @@ export const NotesAppBar = () => {
                 >
                     Cargar archivo 
                 </button>
-                {/* <button 
-                className="btn"
-                onClick={handledSave}
-                >
-                    Guardar
-                </button> */}
+               
 
             </div>
         </div>

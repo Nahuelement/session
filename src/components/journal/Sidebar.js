@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { startLogout } from '../../actions/auth'
 import { openModal } from '../../actions/modal'
-import { noteLogout, startNewNotes } from '../../actions/notes'
+import {  startNewNotes } from '../../actions/notes'
 import { JournalEntries } from './JournalEntries'
 
 

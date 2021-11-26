@@ -15,7 +15,7 @@ export const JournalScreen = () => {
         <div className="journal__main-content animate__animated  animate__fadeIn animate__fast	800ms">
 
         <Sidebar />
-        < JornalModal />
+        
         <main>
             {
             active?
@@ -23,6 +23,7 @@ export const JournalScreen = () => {
             :(<NothingSelect /> )
             }
         </main>
+        < JornalModal />
         
         
     </div>
