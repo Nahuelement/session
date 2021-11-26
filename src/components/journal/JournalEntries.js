@@ -10,8 +10,8 @@ export const JournalEntries = () => {
 
 
 
-    const {notes} = useSelector(state => state.notes)
-    notes.sort((a, b) => b.date - a.date);
+    let {notes} = useSelector(state => state.notes)
+    // notes.sort((a, b) => a.date - b.date );
 
 
    

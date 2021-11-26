@@ -107,16 +107,7 @@ export const startSaveNote = (note) => {
         catch(err) {
             console.log(err)
         }
-        
-        
-
-
-        
-
-
-       
-            
-        
+    
             
        
        
@@ -153,7 +144,7 @@ export const startUpLoading = (file) =>{
          fileUrl= 'www.koi.partedelaprueba.porproblemasconJest().com'
         }
         activeNote.url = fileUrl
-        console.log(activeNote)
+        
        
 
         dispatch(startSaveNote(activeNote))
