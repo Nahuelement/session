@@ -14,13 +14,13 @@ const initialState = {
     {   id:'dieuxzhdhesd',
         title: '', 
         body: '',
-        date: new Date().getTime(),
+        date: new Date().getTime() *2,
         url: ''
     },{
         id:'dieuddssddhdhe',
         title: '', 
         body: '',
-        date: new Date().getTime(),
+        date: new Date().getTime() + 10002,
         url: 'https://res.cloudinary.com/nahuelement/image/upload/v1637868846/lz1ewt19ssqaug9aj3yc.svg'
     }],
     active: null
