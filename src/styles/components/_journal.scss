@@ -1,0 +1,135 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2&family=Montagu+Slab:wght@500&family=Open+Sans&family=Playfair+Display&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2&family=Montagu+Slab:wght@500&family=Playfair+Display&display=swap');
+
+.journal__main-content{
+    display:flex;
+    height:100vh
+    
+}
+
+.journal__sidebar{
+    background-color: $dark-grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50vh;
+    position:relative;
+    box-shadow: 0 0 5px black
+    
+   
+
+}
+.journal__sidebar-navbar{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: -17px;
+    justify-content: space-between;
+
+    & h3{
+
+        span{
+            font-weight: lighter;
+        
+            font-family: 'M PLUS 2', sans-serif;
+
+        }
+        
+       
+    }
+}
+.journal__new-mock{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    cursor:  pointer;
+    align-items: center;
+    margin-top: 17px;
+    margin-bottom: 1px;
+}
+
+.journal__new-entry{
+    display: flex;
+    flex-direction: column;
+    cursor:  pointer;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 100%;
+    transition:color .6s ease;
+
+    &:hover{
+        color: darken($color: $light-grey, $amount:15)
+    }
+
+}
+.journal__entries{
+    flex: 1,1, auto;
+    height:60vh;
+    margin-top:15px;
+    overflow: scroll;
+    
+
+}
+
+.journal__entry{
+    background-color:white;
+    border-radius: 4px;
+    color: $dark-grey;
+    min-height: 100px;
+    
+    justify-content: space-between;
+    display: flex;
+    margin-bottom:10px;
+    overflow: hidden;
+    
+
+
+
+}
+.journal__entry-picture{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height:9vh;
+    width: 10vw;
+    border-radius:10px;
+
+}
+.journal__entry-body{
+    padding:10px;
+
+}
+
+.journal__entry-title{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.journal__entry-content{
+    font-size: 14px;
+
+}
+.journal__entry-date-box{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-left: auto;
+    margin-right: 7px;
+    font-family: 'M PLUS 2', sans-serif;
+
+    span{
+        font-size:12px
+    }
+}
+

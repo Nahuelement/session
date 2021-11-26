@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2&family=Montagu+Slab:wght@500&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2&family=Montagu+Slab:wght@500&family=Playfair+Display&family=Source+Sans+Pro:wght@300&display=swap');
+
+
+.auth__main{
+    display:flex;
+    // background-color: $primary;
+    justify-content:center;
+    align-items:center;
+    margin:0px;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.auth__box-container{
+    background-color: white;
+    box-shadow: 1px 3px $dark-grey;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+
+
+}
+
+.auth__title{
+    color: darken($color: $primary, $amount:20);
+    margin-bottom:25px;
+    font-size: 35px;
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+.auth__input{
+
+    color:$dark-grey;
+    border: 0px;
+    border-bottom: 1px margin solid $light-grey;
+    font: size 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 15px;
+    height:25px;
+    width: 100%;
+    transition:border-bottom .2s ease;
+
+    &:focus{// le dise a sass que es la misma clase pero en este caso con focus
+        border-bottom: 1px solid $primary;
+        outline:none;
+    }
+
+}
+.auth__social-networks{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding-top: 25px;
+    padding-bottom: 22px;
+
+
+}
+
+// .auth__google-icon{
+//     display:flex;
+//     flex-direction: column;
+//     justify-content:center;
+//     align-items:center;
+//     height:110px;
+//     width: 100px;
+//     padding:10px;
+//     margin-left: auto;
+//     margin-right: auto;
+
+// }
+.auth__alert-error{
+
+    background-color:red;
+    border-radius:  5px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    margin-top: 10px;
+    padding: 5px
+
+}
+
