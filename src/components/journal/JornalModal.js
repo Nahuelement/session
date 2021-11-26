@@ -59,7 +59,7 @@ export const JornalModal = () => {
         isOpen={active}
         // onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
-        closeTimeoutMS ={200}
+        closeTimeoutMS ={2000}
         style={customStyles}
         className = 'modal'
         overlayClassName = 'modal-fondo'
