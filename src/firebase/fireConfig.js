@@ -23,12 +23,14 @@ import 'firebase/auth'
 // console.log(firebaseConfig)
 
  const firebaseConfig = {
-  apiKey: "AIzaSyApYYYMLzUTg1Jo1rM3kZ0EdToIqjR2Ltw",
-  authDomain: "reac-app-curso-143ad.firebaseapp.com",
-  projectId: "reac-app-curso-143ad",
-  storageBucket: "reac-app-curso-143ad.appspot.com",
-  messagingSenderId: "241579396357",
-  appId: "1:241579396357:web:137dc5585bdc2fabc9fb6c"
+  
+    apiKey: "AIzaSyBFg0tYqaAmQhMZ3LmNTfDI2o8SR8KF9Qs",
+    authDomain: "robert-proyect.firebaseapp.com",
+    projectId: "robert-proyect",
+    storageBucket: "robert-proyect.appspot.com",
+    messagingSenderId: "732539088295",
+    appId: "1:732539088295:web:dbf773fa90b14bb973da82"
+
    };
 
   // const firebaseConfigTest = {
