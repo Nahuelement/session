@@ -11,25 +11,25 @@ import 'firebase/auth'
 
 
 
-const firebaseConfig = {
-  apiKey: process.env.REACT_APP_APIKEY,
-  authDomain: process.env.REACT_APP_AUTHDOMAIN,
-  projectId: process.env.REACT_APP_PROJECTID,
-  storageBucket:process.env.REACT_APP_STORAGEBUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
-  appId: process.env.REACT_APP_APPID
-};
+// const firebaseConfig = {
+//   apiKey: process.env.REACT_APP_APIKEY,
+//   authDomain: process.env.REACT_APP_AUTHDOMAIN,
+//   projectId: process.env.REACT_APP_PROJECTID,
+//   storageBucket:process.env.REACT_APP_STORAGEBUCKET,
+//   messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+//   appId: process.env.REACT_APP_APPID
+// };
 
 // console.log(firebaseConfig)
 
-// const firebaseConfig = {
-//     apiKey: "AIzaSyApYYYMLzUTg1Jo1rM3kZ0EdToIqjR2Ltw",
-//     authDomain: "reac-app-curso-143ad.firebaseapp.com",
-//     projectId: "reac-app-curso-143ad",
-//     storageBucket: "reac-app-curso-143ad.appspot.com",
-//     messagingSenderId: "241579396357",
-//     appId: "1:241579396357:web:137dc5585bdc2fabc9fb6c"
-//   };
+ const firebaseConfig = {
+  apiKey: "AIzaSyApYYYMLzUTg1Jo1rM3kZ0EdToIqjR2Ltw",
+  authDomain: "reac-app-curso-143ad.firebaseapp.com",
+  projectId: "reac-app-curso-143ad",
+  storageBucket: "reac-app-curso-143ad.appspot.com",
+  messagingSenderId: "241579396357",
+  appId: "1:241579396357:web:137dc5585bdc2fabc9fb6c"
+   };
 
   // const firebaseConfigTest = {
   //   apiKey: "AIzaSyD3eIx2Evlmg86Jg09Zg2xSZogOBRYLNAE",
